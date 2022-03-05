@@ -15,8 +15,8 @@ while answer != "no":
     print(f"The time of the trip is {Time} minutes")
     answer = input("Do you want to start a trip?: ")
 
-Average_time = Total_time / Time
-Average_cost = Total_cost / cost
+Average_time = Total_time / Total_trip
+Average_cost = Total_cost / Total_trip
 print(f"for driver {name} your total time is {Total_time} minutes")
 print(f"your total income is {Total_cost} $ ")
 print(f"your average time is {Average_time} minutes and your average income is {Average_cost} $ ")
