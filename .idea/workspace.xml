@@ -50,7 +50,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$" />
   </component>
-  <component name="RunManager" selected="Python.proggaming project 4">
+  <component name="RunManager" selected="Python.proggaming project 5">
     <configuration name="Proggaming project 2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="progamming project" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -158,8 +158,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.proggaming project 4" />
         <item itemvalue="Python.proggaming project 5" />
+        <item itemvalue="Python.proggaming project 4" />
         <item itemvalue="Python.progamming project 3" />
         <item itemvalue="Python.Proggaming project 2" />
         <item itemvalue="Python.progamming project 1" />
@@ -187,15 +187,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/proggaming project 5.py</url>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

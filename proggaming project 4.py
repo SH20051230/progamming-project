@@ -3,8 +3,8 @@ def staff_absent_tracker():
     absense_name = []
     while employee_name != "$":
         employee_name = input("what's your name: ")
-        if len(absense_name) > 0:
-            if employee_name == "$":
+        if employee_name == "$":
+            if len(absense_name) > 0:
 
              summary(absense_name)
 
@@ -16,11 +16,11 @@ def staff_absent_tracker():
 def summary(absense_name):
     total_days_absent = 0
     total_numbers_absent = len(absense_name)
-    most_absent = [["", 0]]
+    most_absent = ["", 0]
     no_absent = []
     for employee_name in absense_name:
         if employee_name[1] > most_absent[0][1]:
-            most_absent = employee_name
+           most_absent[0] = employee_name
         elif employee_name[1] == most_absent[0][1]:
             most_absent.append(employee_name)
         elif employee_name[1] == 0:

@@ -1,41 +1,58 @@
-Total_fine = 0
-number = int(input("press 0 to stop recording, press anything else to start: "))
-name = (input("what's the speeder's name: "))
-while number != 0:
-    Total_fine + 1
-    over_limit = int(input("What's the speeder's over limit value: "))
-    for over_limit in range(0, 11):
-        Fine_1 = 30
-        print(f"{Fine_1}")
-    for over_limit in range(10, 15):
-        Fine_2 = 80
-        print(f"{Fine_2}")
-    for over_limit in range(15, 20):
-        Fine_3 = 120
-        print(f"{Fine_3}")
-    for over_limit in range(20, 25):
-        Fine_4 = 170
-        print(f"{Fine_4}")
-    for over_limit in range(25, 30):
-        Fine_5 = 230
-        print(f"{Fine_5}")
-    for over_limit in range(30, 35):
-        Fine_6 = 300
-        print(f"{Fine_6}")
-    for over_limit in range(35, 40):
-        Fine_7 = 400
-        print(f"{Fine_7}")
-    for over_limit in range(40, 45):
-        Fine_8 = 510
-        print(f"{Fine_8}")
+def main():
+    key = "X"
+    name = (input("what's the speeder's name: ")).title()
+    total_fine = 0
+    speeder_list = []
+    if name == "X":
+        end_input() == (total_fine, speeder_list)
     else:
-        Fine = 630
-        print(f"{Fine}")
+        warrants(name)
+        amount_over = int(input("Enter the amount over limit: "))
+        fine = int(fine_calc(amount_over))
+        total_fine += fine
+        if fine > 0:
+           speeder_list.append([name, amount_over])
+
+        print(f"{name} is be fined with {fine}")
+
+def end_input(total_fines, speeder_list):
+    print(f"total fines is {len(speeder_list)}")
+    for fine in speeder_list:
+        print(f"{speeder_list.index(fine) + 1}")
+        f"{fine[0]}\tamount over limite: {fine[1]}"
+    print(f"total fine value is {total_fines}")
 
 
 
-print(f"Total Fines for today is {Total_fine}")
-print(f"The amount of Fines for today is {Fine_cost}")
+def fine_calc(amount_over):
+    if  amount_over < 10:
+        fine = 30
+    elif amount_over < 15:
+        fine = 80
+    elif amount_over < 20:
+        fine = 120
+    elif amount_over < 25:
+        fine = 170
+    elif amount_over < 30:
+        fine = 230
+    elif amount_over < 35:
+        fine = 300
+    elif amount_over < 40:
+        fine = 400
+    elif amount_over < 45:
+        fine = 510
+    else:
+        fine = 630
+    return fine
+
+def warrants(name):
+    warrant_list = ["James_Wilson", "Helga_Norman", "Zachary Conroy"]
+    if name in warrant_list:
+        print(f"{name} warrant to arrest".upper())
+
+
+print("Speeding tracer, Ebter X to exit input mode and produce a summary")
+main()
 
 
 
